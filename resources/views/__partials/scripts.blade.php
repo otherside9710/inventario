@@ -27,3 +27,22 @@
         });
     }).resize();
 </script>
+
+<script>
+    var $video  = $('#home_banner'),
+        $window = $(window);
+
+    $(window).resize(function(){
+        var height = $window.height();
+        $video.css('height', height);
+
+        var videoWidth = $video.width(),
+            windowWidth = $window.width(),
+            marginLeftAdjust =   (windowWidth - videoWidth) / 2;
+
+        $video.css({
+            'height': height ,
+            'marginLeft' : 0
+        });
+    }).resize();
+</script>

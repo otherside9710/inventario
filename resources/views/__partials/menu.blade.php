@@ -24,61 +24,26 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#dashboard-dropdown" aria-expanded="false"
-               aria-controls="dashboard-dropdown">
-                <i class="menu-icon fa fa-cash-register"></i>
-                <span class="menu-title">Productos</span>
-                <i class="menu-arrow"></i>
+            <a class="nav-link" href="{{route('sections')}}"
+               @if(Request::is('/secciones')) class="active" @endif>
+                <i class="menu-icon fa fa-columns"></i>
+                <span class="menu-title">Secciones</span>
             </a>
-            <div class="collapse" id="dashboard-dropdown">
-                <ul class="nav flex-column sub-menu">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('productos')}}"
-                           @if(Request::is('/produtos')) class="active" @endif>
-                            <i class="menu-icon fa fa-clipboard-list"></i>
-                            <span class="menu-title">Productos</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('producto.add')}}"
-                           @if(Request::is('/producto/agregar')) class="active" @endif>
-                            <i class="menu-icon fa fa-plus-circle"></i>
-                            <span class="menu-title">Agregar Producto</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('producto.edit')}}"
-                           @if(Request::is('/producto/editar')) class="active" @endif>
-                            <i class="menu-icon fa fa-pencil-alt"></i>
-                            <span class="menu-title">Editar Producto</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('producto.exit')}}"
-                           @if(Request::is('/producto/salida')) class="active" @endif>
-                            <i class="menu-icon fa fa-shopping-cart"></i>
-                            <span class="menu-title">Salida Producto</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </li>
-        @if(\Illuminate\Support\Facades\Auth::user()->role == 'admin')
-            <li class="nav-item">
-                <a class="nav-link" href="{{route('admin.logs')}}"
-                   @if(Request::is('/admin/logs')) class="active" @endif>
-                    <i class="menu-icon fa fa-file-alt"></i>
-                    <span class="menu-title">Logs</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{route('admin.users')}}"
-                   @if(Request::is('/admin/registrar/usuario')) class="active" @endif>
-                    <i class="menu-icon fa fa-user-circle"></i>
-                    <span class="menu-title">Usuarios</span>
-                </a>
-            </li>
-        @endif
+        <li class="nav-item">
+            <a class="nav-link" href="{{route('notices')}}"
+               @if(Request::is('/noticias')) class="active" @endif>
+                <i class="menu-icon fa fa-newspaper"></i>
+                <span class="menu-title">Noticias</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{route('team')}}"
+               @if(Request::is('/equipo')) class="active" @endif>
+                <i class="menu-icon fa fa-user"></i>
+                <span class="menu-title">Nuestro Equipo</span>
+            </a>
+        </li>
     </ul>
 </nav>
 

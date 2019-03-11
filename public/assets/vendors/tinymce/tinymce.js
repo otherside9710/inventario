@@ -37084,7 +37084,7 @@ define(
        * Sets the params of the last opened window.
        *
        * @method setParams
-       * @param {Object} params Params object to set for the last opened window.
+       * @param {Object} params Sections object to set for the last opened window.
        */
       self.setParams = function (params) {
         if (getTopMostWindow()) {

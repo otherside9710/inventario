@@ -47,7 +47,7 @@
                                 <button type="submit" class="btn btn-primary submit-btn">INGRESAR</button>
                             </div>
                             <div class="wrapper mt-5 text-gray">
-                                <p class="footer-text">Copyright © 2018 Inventario Web. All rights reserved.</p>
+                                <p class="footer-text">Copyright © 2018 Web Admin. All rights reserved.</p>
                             </div>
                         </form>
                     </div>

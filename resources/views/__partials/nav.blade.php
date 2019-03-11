@@ -5,7 +5,7 @@
 </style>
 <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
     <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
-        <h5 style="margin-top: 28px !important;">INVENTARIO WEB</h5>
+        <h5 style="margin-top: 28px !important;">WEB ADMIN</h5>
         <a class="navbar-brand brand-logo-mini" href="{{route('home')}}">
             <img src="{{asset('images/vm-mini.png')}}" alt="logo"/> </a>
     </div>
