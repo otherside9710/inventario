@@ -23,6 +23,7 @@ class SeccionesController extends Controller
     public function update(Request $request)
     {
         $content = Sections::where('id', $request->id)->first();
+        $content->titulo = trim($request->title);
         $content->descripcion = trim($request->desc);
         $content->update();
         Session::put('success', 'Sección Actualizada Correctamente.');
